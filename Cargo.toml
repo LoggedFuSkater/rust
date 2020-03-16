@@ -5,7 +5,7 @@ authors = ["AleSod <alexander.soderholm91@gmail.com>"]
 edition = "2018"
 license-file = "LICENCE"
 repository = "https://github.com/LoggedFuSkater/rust"
-readme = "https://github.com/LoggedFuSkater/core/blob/master/README.MD"
+readme = "README.MD"
 
 [dependencies]
 rust-crypto = "0.2.36"
