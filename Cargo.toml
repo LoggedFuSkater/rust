@@ -3,6 +3,9 @@ name = "logged_fu_skater"
 version = "0.1.0"
 authors = ["AleSod <alexander.soderholm91@gmail.com>"]
 edition = "2018"
+license-file = "LICENCE"
+repository = "https://github.com/LoggedFuSkater/rust"
+readme = "https://github.com/LoggedFuSkater/core/blob/master/README.MD"
 
 [dependencies]
 rust-crypto = "0.2.36"
