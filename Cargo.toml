@@ -6,6 +6,7 @@ edition = "2018"
 license-file = "LICENSE"
 repository = "https://github.com/LoggedFuSkater/rust"
 readme = "README.MD"
+description = "Human readable string obfuscation library."
 
 [dependencies]
 rust-crypto = "0.2.36"
