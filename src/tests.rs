@@ -8,7 +8,7 @@ struct TestData {
 }
 
 #[test]
-fn test() {
+fn test_positive() {
     for test in TEST_CASES {
         let result = obfp(test.input, test.padding);
 
@@ -41,11 +41,6 @@ const TEST_CASES: &[TestData] = &[
     TestData {
         input:          "asdf",
         padding:        8,
-        expected_result: "HonestlyErgonomicSloth5012F6C60B27661C",
-    },
-    TestData {
-        input:          "asdf",
-        padding:        200,
         expected_result: "HonestlyErgonomicSloth5012F6C60B27661C",
     },
     // Test a few unique UUID:s
