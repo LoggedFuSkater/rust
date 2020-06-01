@@ -9,6 +9,14 @@ repository = "https://github.com/LoggedFuSkater/rust"
 readme = "README.MD"
 description = "Human readable string obfuscation library."
 
+[[test]]
+name = "implementation_test"
+path = "tests/implementation_test.rs"
+required-features = ["default-implementations"]
+
+[features]
+default-implementations = []
+
 [dependencies]
 rust-crypto = "0.2.36"
 hex = "0.4.2"

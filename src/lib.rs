@@ -11,6 +11,9 @@ mod adverbs;
 mod adjectives;
 mod nouns;
 
+#[cfg(feature = "default-implementations")]
+pub mod default_implementations;
+
 #[cfg(test)]
 mod tests;
 
@@ -77,4 +80,10 @@ pub fn obfp(input: &str, padding_bytes: u8) -> String {
     let padding: Vec<u8> = result[12..(12 + padding_bytes as usize)].try_into().expect("Could not convert padding to Vec");
 
     format!("{}{}{}{}", adverb, adjective, noun, hex::encode_upper(padding))
+}
+
+/// Trait to implement obfuscate functionality on relevant data types.
+pub trait Obfuscateable {
+    fn obf(&self) -> String;
+    fn obfp(&self, padding_bytes: u8) -> String;
 }
